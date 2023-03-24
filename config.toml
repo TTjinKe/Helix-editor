@@ -1,0 +1,65 @@
+#theme = "heisenberg"
+# theme = "bogster_light"
+# theme = "bogster"
+# theme = "noctis"
+# theme = "pop-dark"
+theme = "dark_high_contrast"
+
+[editor]
+color-modes = true
+cursorline = true
+cursorcolumn = false
+auto-save = false
+true-color = true
+bufferline = "multiple"
+line-number = "relative"
+completion-trigger-len = 1
+auto-completion = true
+auto-info = true
+idle-timeout = 400
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = [
+  "diagnostics",
+  "selections",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-messages = true
+
+[editor.whitespace]
+render = "all"
+
+
+[editor.whitespace.characters]
+space = ""   #  ·           
+nbsp = "⍽"
+tab = "→"
+newline = "" # ⏎ 
+tabpad = "·"
+
+
+[editor.indent-guides]
+render = true
+character = "│" # Some characters that work well: "▏", "┆", "┊", "⸽" ""
+skip-levels = 1
+
+[keys.normal]
+A-h = ":buffer-next"
+A-l = ":buffer-previous"
+# C-x = ":x"
+
+[keys.insert]
+A-h = ":buffer-next"
+A-l = ":buffer-previous"
+# C-x = ":x"
